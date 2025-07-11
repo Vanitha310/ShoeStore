@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Trending Collections</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .trending-products {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .trending-products h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+            font-size: 2.5rem;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            height: 200px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+        }
+
+        .product-image img {
+            width: 400px;
+            height: 200px;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-subtitle {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            color: #e63946;
+            font-weight: bold;
+        }
+
+        .product-discount {
+            color: #666;
+            text-decoration: line-through;
+            font-size: 0.8rem;
+            margin-left: 5px;
+        }
+
+        .button-wrapper {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .back-button {
+            padding: 15px 40px;
+            background-color: #009688;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #00796b;
+        }
+    </style>
+</head>
+<body>
+    <div class="trending-products">
+        <h1>Trending Styles for Men</h1>
+        
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/Super_Shoes.jpg" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Super Shoes</div>
+                    <div class="product-subtitle">Premium comfort with advanced cushioning technology</div>
+                    <div class="product-price">$1800.00 <span class="product-discount">$23 (-30%)</span></div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/Leather_Brown.jpg" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Leather Brown</div>
+                    <div class="product-subtitle">Genuine leather upper with classic styling</div>
+                    <div class="product-price">$1900.00 <span class="product-discount">$23 (-30%)</span></div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/Party_Wear.jpg" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Trending Shoes Party Wear For Men</div>
+                    <div class="product-subtitle">Stylish formal shoes for special occasions</div>
+                    <div class="product-price">$2000.00 <span class="product-discount">$23 (-30%)</span></div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/Sports_Shoes.jpg" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Sports Shoes Training & Gym</div>
+                    <div class="product-subtitle">High-performance footwear for athletes</div>
+                    <div class="product-price">$500.00 <span class="product-discount">$23 (-30%)</span></div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/Kids_Shoes.jpg" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Kids Shoes</div>
+                    <div class="product-subtitle">Durable and comfortable for active children</div>
+                    <div class="product-price">$900.00 <span class="product-discount">$23 (-30%)</span></div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/Super_Shoes_Pro.jpg" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Super Shoes</div>
+                    <div class="product-subtitle">Upgraded version with enhanced support</div>
+                    <div class="product-price">$2500.00 <span class="product-discount">$23 (-30%)</span></div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/Super_Shoes_Lite.jpg" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Super Shoes</div>
+                    <div class="product-subtitle">Lightweight version for everyday wear</div>
+                    <div class="product-price">$700.00 <span class="product-discount">$23 (-30%)</span></div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/Super_Shoes_Air" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Super Shoes</div>
+                    <div class="product-subtitle">Breathable mesh design for maximum airflow</div>
+                    <div class="product-price">$600.00 <span class="product-discount">$23 (-30%)</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="button-wrapper">
+        <a href="index.html" class="back-button">← Back to Collections</a>
+    </div>
+</body>
+</html>
